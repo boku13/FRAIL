@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 # Initialize network
 # Loss and optimizer
 #training loop
-#testing the model
+#testing the model's performance
 def check_accuracy(loader, model):
     num_correct = 0
     num_samples = 0
