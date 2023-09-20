@@ -51,13 +51,7 @@ print(f"Accuracy on test set: {check_accuracy(test_loader, model)*100:.2f}")
 # Plotting the graph of loss vs epochs and accuracy vs epochs
 plt.figure(figsize=(12, 5))
 plt.subplot(1, 2, 1)
-plt.plot(range(1, len(train_losses) + 1), train_losses, label='Train Loss')
-plt.plot(range(1, len(test_losses) + 1), test_losses, label='Validation Loss')
-plt.xlabel('Epoch')
-plt.ylabel('Loss')
-plt.title('Loss vs Epochs')
-plt.legend()
-
+#training loop must be configured to allow plotting of the accuracy as the model progresses
 plt.subplot(1, 2, 2)
 plt.plot(range(1, len(train_accuracy) + 1), train_accuracy, label='Train Accuracy')
 plt.plot(range(1, len(test_accuracy) + 1), test_accuracy, label='Validation Accuracy')
